@@ -4,16 +4,13 @@
 <title> Login Page </title>  
 
 </head>    
-<body>    
-    <center> <h1> hotlog </h1> </center>   
-    <form>  
-        <div class="container">   
-            <label>Username : </label>   
-            <input type="text" placeholder="Enter Username" name="username" required>  
-            <label>Password : </label>   
-            <input type="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit">Login</button>      
-        </div>   
-    </form>     
+<body>        
+    <script src= "/js/create_user.js"></script>
+    <center> <h1> hotlog </h1> </center>  
+    fullname: <input type= "text" id="fn">
+    email: <input type="text" id="em"> 
+    username: <input type = "text" id="un">
+    password: <input type = "password" id="pwd">
+    <button onclick="create_user()">Login</button>
 </body>     
 </html>  
