@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script type="text/javascript" src="/socket.io/socket.io.js">
+    console.log('client side javascript')
+    var socket = io.connect("localhost", {"port" : "3000"});
+            var receiveFile = socket.on("receiveFile", function(data) {
+                $("#filecontent").html(data + "<br/>");
+                console.log(data);
+            });
+
+            setInterval(requestFile, 200);
+  </script>
+</head>
+
+<body>
+    <div id="filecontent"></div> 
+</body>
+
+</html>
